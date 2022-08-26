@@ -2,7 +2,8 @@
     {
         "id": "1",
         "producto": {
-            "nombre": "Zapatillas Nike Revolution 6 Next Nature",
+            "img": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/4144c92b-0558-448c-aaa1-31f475a45b9f/calzado-de-running-de-carretera-f%C3%A1cil-de-poner-y-quitar-revolution-6-flyease-next-nature-0fm7Ds.png",
+            "nombre": "Nike Revolution 6 Next Nature",
             "descripcion": "Suma más y más kilómetros con tus Zapatillas Nike Revolution 6 Next Nature, que aportan amortiguación y confort a cada paso que des. Su capellada transpirable y suela diseñada por computadora para una mejor tracción son ideales hasta para los corredores más exigentes."
         },
         "stock": 5
@@ -10,7 +11,8 @@
     {
         "id": "2",
         "producto": {
-            "nombre": "Zapatillas Puma Shuffle",
+            "img": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/309668/04/sv01/fnd/EEA/fmt/png/Zapatillas-PUMA-Shuffle",
+            "nombre": "Puma Shuffle",
             "descripcion": "Las zapatillas Puma Shuffle ADP están confeccionadas en materiales sintéticos. De caña baja, con ajuste personalizado gracias al sistema de cordones, sus perforaciones le dan un estilo urbano que se fusiona con la inserción del logo PUMA N°1 y PUMA N°2 para que camines la calle de la ciudad con un calzado sofisticado."
         },
         "stock": 1
@@ -18,7 +20,8 @@
     {
         "id": "3",
         "producto": {
-            "nombre": "Zapatillas Adidas Coreracer",
+            "img": "https://assets.adidas.com/images/w_600,f_auto,q_auto/6ca4b6ca6af04319825dab89012737bf_9366/Tenis_Coreracer_Negro_FX3581_01_standard.jpg",
+            "nombre": "Adidas Coreracer",
             "descripcion": "Urbanas, livianas y frescas, las Zapatillas adidas Coreracer están pensadas para cumplir con las demandas de los corredores más exigentes. Su suela tiene un estabilizador de talón y su capellada es transpirable para mantener el confort que mereces durante todo tu trayecto."
         },
         "stock": 3

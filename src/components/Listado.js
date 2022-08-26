@@ -14,7 +14,7 @@ export default function Listado({ agregarItem }) {
   return (
     <div className='container'>
       {/* renderizamos los Item aquí */}
-      {data.map((item) => <Item key={item.id} nombre={item.producto.nombre} descripcion={item.producto.descripcion} stock={item.stock} action={agregarItem} />)}
+      {data.map((item) => <Item key={item.id} img={item.producto.img} nombre={item.producto.nombre} descripcion={item.producto.descripcion} stock={item.stock} action={agregarItem} />)}
     </div>
   )
 }
