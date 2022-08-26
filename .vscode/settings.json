@@ -1,0 +1,7 @@
+{
+    "conventionalCommits.scopes": [
+        "Cabecera",
+        "Listado",
+        "Listado & Item"
+    ]
+}
