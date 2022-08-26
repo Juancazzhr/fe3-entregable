@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Cabecera from './components/Cabecera'
 import Listado from './components/Listado'
 
@@ -10,10 +11,16 @@ import Listado from './components/Listado'
 
 function App() {
 
+  const [totalItems, setTotalItems] = useState(0);
+
+  const agregarItem = (cantidad) => {
+    setTotalItems(totalItems + cantidad)
+  }
+
     return (
       <div className="App">
-        <Cabecera />
-        <Listado />
+        <Cabecera cantidadItems={totalItems}/>
+        <Listado agregarItem={agregarItem} />
       </div>
     );
   }
