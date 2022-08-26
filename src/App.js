@@ -1,3 +1,6 @@
+import Cabecera from './components/Cabecera'
+import Listado from './components/Listado'
+
 // El componente App es el padre de:
 // - Cabecera
 // - Listado
@@ -7,12 +10,12 @@
 
 function App() {
 
-  return (
-    <div className="App">
-      <Cabecera />
-      <Listado />
-    </div>
-  );
-}
+    return (
+      <div className="App">
+        <Cabecera />
+        <Listado />
+      </div>
+    );
+  }
 
 export default App;
