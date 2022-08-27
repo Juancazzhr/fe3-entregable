@@ -48,6 +48,7 @@ header p span {
 .producto img {
   height: 250px;
   object-fit: cover;
+  border-radius: 16px;
 }
 
 .prodcuto-img-sinStock {
@@ -63,12 +64,19 @@ header p span {
   text-align: center;
 }
 
-.producto h5 span {
+.producto-sinStock {
   background-color: rgb(255, 178, 178);
-  padding: 3px;
+  padding: 4px 6px;
   font-weight: lighter;
   color: rgb(155, 0, 0);
-  border-radius: 3px;
+  border-radius: 2px;
+}
+
+.producto-stock {
+  background-color: rgba(200, 200, 200, 0.6);
+  padding: 4px 6px;
+  font-weight: lighter;
+  border-radius: 4px;
 }
 
 .producto-btn {
@@ -98,11 +106,3 @@ header p span {
 .quitar:enabled:hover {
   background-color: rgb(202, 25, 25);
 }
-
-
-
-/*
-color: whitesmoke;
-  border: none;
-  border-radius: 4px;
-*/
