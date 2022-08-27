@@ -15,6 +15,12 @@ export default function Item({ img, nombre, descripcion, stock, action }) {
   const [itemStock, setItemStock] = useState(stock);
   const sinStock = itemStock <= 0;
 
+  const styleImgSinStock = sinStock ? `prodcuto-img-sinStock` : ``;
+  const styleH5SpanSinStock = sinStock ? `producto-sinStock` : `producto-stock`;
+
+  const h5SpanContent = sinStock ? `agotado` : itemStock;
+  const btnAgregarContent = sinStock ? `Sin stock` : `Agregar al carrito`;
+
   const agregarItem = () => {
     action(1);
     setItemStock(itemStock - 1);
@@ -28,10 +34,11 @@ export default function Item({ img, nombre, descripcion, stock, action }) {
   return (
     <div className={`producto`}>
       <h3>{nombre}</h3>
-      <img className={sinStock ? `prodcuto-img-sinStock` : ``} src={img} alt={nombre} />
+      <img className={styleImgSinStock} src={img} alt={nombre} />
       <p>{descripcion}</p>
-      <h5>Stock <span className={sinStock ? `producto-sinStock` : `producto-stock`}>{sinStock ? `agotado` : itemStock}</span></h5>
-      <button className='producto-btn agregar' disabled={sinStock} onClick={agregarItem}>{sinStock ? `Sin stock` : `Agregar al carrito`}</button>
+      <h5>Stock <span className={styleH5SpanSinStock}>{h5SpanContent}</span></h5>
+
+      <button className='producto-btn agregar' disabled={sinStock} onClick={agregarItem}>{btnAgregarContent}</button>
 
       {itemStock !== stock && <button className='producto-btn quitar' onClick={quitarItem}>Quitar del carrito</button>}
     </div>
