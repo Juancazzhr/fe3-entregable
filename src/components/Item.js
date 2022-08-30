@@ -8,7 +8,7 @@
 //    h5 > span    (este span debe mostrar la cantidad si es mayor a 0 "agotado" si llega a 0)
 //    button       (este boton debe permitir comprar, pero si la cantidad es menor a 0 debe estar deshabilitado y decir "Sin stock")
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Item({ img, nombre, descripcion, stock, action }) {
 
@@ -30,6 +30,11 @@ export default function Item({ img, nombre, descripcion, stock, action }) {
     action(-1);
     setItemStock(itemStock + 1);
   }
+
+  useEffect(
+    () => {
+      console.log(`Component 'Item' mount`);
+    }, []);
 
   return (
     <div className={`producto`}>
